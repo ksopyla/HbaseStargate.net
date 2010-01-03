@@ -1,0 +1,27 @@
+#how to use it
+#sudo -u hadoop /home/hadoop/hbase/build/bin/hbase shell path_to_this_file
+
+#delete previous tables
+disable 'users'
+drop 'users'
+
+#create new table with three column families
+create 'users','info','feeds', 'liked-url'
+
+#insert some users
+put 'users' ,'ksirg', 'info:name' , 'krzysztof'
+put 'users' ,'ksirg', 'info:email' , 'ksirg@wp.pl'
+put 'users' ,'kml', 'info:name' , 'kamil'
+put 'users' ,'placek', 'info:name' , 'daniel'
+put 'users' ,'placek', 'info:email' , 'daniel.plawgo@gmail.com'
+
+#insert users feeds
+put 'users' ,'ksirg' , 'feeds:feeds.feedburner.com/antyweb', '2009-03-12'
+put 'users' ,'ksirg' , 'feeds:channel9.msdn.com/Feeds/RSS/', '2009-06-22'
+put 'users' ,'ksirg' , 'feeds:feeds2.feedburner.com/CodeBetter', '2009-01-02'
+put 'users' ,'ksirg' , 'feeds:feeds.codeguru.pl/rss-news.aspx', '2009-03-12'
+put 'users' ,'kml' , 'feeds:feeds.feedburner.com/antyweb', '2009-03-12'
+put 'users' ,'kml' , 'feeds:feeds.feedburner.com/Geekcompl', '2009-11-12'
+
+#insert liked urls
+put 'users', 'ksirg', 'liked-url:eastgroup.pl', '2009-09-23'

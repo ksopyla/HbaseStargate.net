@@ -1,0 +1,9 @@
+
+HBaseStargate.net is .net v3.5 library for Stargate (a RESTful Web service front end for HBase.)
+
+It contains two projects first - HBaseStargate, main library, and second - HBaseStargateUsage, a few samples showing how to use HBaseStargate API
+
+
+If you want run this you have to:
+1. run hbase and change host and port variables
+2. create 'users' table in hbase, for this task you can use *insertScritp.txt* in main folder

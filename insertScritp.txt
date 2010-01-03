@@ -10,10 +10,10 @@ create 'users','info','feeds', 'liked-url'
 
 #insert some users
 put 'users' ,'ksirg', 'info:name' , 'krzysztof'
-put 'users' ,'ksirg', 'info:email' , 'ksirg@wp.pl'
+put 'users' ,'ksirg', 'info:email' , 'ksirg@test.pl'
 put 'users' ,'kml', 'info:name' , 'kamil'
 put 'users' ,'placek', 'info:name' , 'daniel'
-put 'users' ,'placek', 'info:email' , 'daniel.plawgo@gmail.com'
+put 'users' ,'placek', 'info:email' , 'daniel@test.com'
 
 #insert users feeds
 put 'users' ,'ksirg' , 'feeds:feeds.feedburner.com/antyweb', '2009-03-12'

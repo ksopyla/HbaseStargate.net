@@ -25,7 +25,7 @@ namespace HbaseStargateUsage
          * 
          */
         static string protocol = "http://";
-        static string host = "192.168.228.128";
+        static string host = "192.168.1.2";
         static int port = 8080;
         static void Main(string[] args)
         {
@@ -126,9 +126,9 @@ namespace HbaseStargateUsage
         {
 
             string table = "users";
-            string key = "l*";
+            string key = "k*";
 
-            string columns = "info,feeds";
+            string columns = "info";
 
             // CellSet rows = client.GetRow(table,key,columns);
             CellSet rows = client.GetRow(table, key);

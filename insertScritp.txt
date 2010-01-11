@@ -1,9 +1,9 @@
 #how to use it
 #sudo -u hadoop /home/hadoop/hbase/build/bin/hbase shell path_to_this_file
 
-#delete previous tables
-disable 'users'
-drop 'users'
+#delete previous tables if nesesary
+#disable 'users'
+#drop 'users'
 
 #create new table with three column families
 create 'users','info','feeds', 'liked-url'

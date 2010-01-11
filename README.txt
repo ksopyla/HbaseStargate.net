@@ -6,7 +6,8 @@ It contains two projects first - HBaseStargate, main library, and second - HBase
 If you want run this you have to:
 1. Start stargate on yours hbase cluster (http://wiki.apache.org/hadoop/Hbase/Stargate#A2)
 2. run hbase and change host and port variables
-3. create 'users' table in hbase, for this task you can use *insertScritp.txt* in main folder
+3. create 'users' table in hbase, for this task you can use *insertScript* in main folder 
+	sudo -u hadoop $HBASE_ROOT/bin/hbase shell insertScript
 
 TODO:
 - add scanners
